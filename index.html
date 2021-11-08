@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Tiendas virtual">
+    <title>Frontend Store</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- Styles-->
+    
+    <link rel="preload" href="./build/css/app.min.css" as="style">
+    <link rel="stylesheet" href="./build/css/app.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Script-->
+    <link rel="preload" href="./js/producto.js" as="script">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="./build/img/logo.webp" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="nav">
+        <a class="nav__enlace enlace_anima nav__enlace--activo" data-paso="1">Tienda</a>
+        <a class="nav__enlace enlace_anima" data-paso="2">Nosotros</a>
+        <button class="swtich enlace_anima" id="switch">
+            <span class="switch-button"><i class="fas fa-sun"></i></span>
+            <span class="switch-button"><i class="fas fa-moon"></i></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <!-- Seccio productos-->
+        <div id="paso-1" class="seccion mostrar-seccion">
+            <h1 class="titulo">Nuestros productos</h1>
+
+            <div class="grid">
+                <!--Producto-->
+
+            </div>
+        </div>
+
+
+        <!-- Seccion nosotros-->
+        <div id="paso-2" class="seccion">
+            <h1>Nosotros</h1>
+            <div class="nosotros">
+                <div class="nosotros_txt">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rem ullam
+                        illo nihil dicta incidunt in amet veritatis quo ab, porro cumque animi quasi
+                        eaque molestiae architecto velit? Tempore, accusamus?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ut ducimus
+                        sequi blanditiis doloribus. Consectetur, veritatis earum. Incidunt facilis
+                        expedita.</p>
+                </div>
+                <img class="nosotros__img" src="./build/img/nosotros.webp" alt="Nosotros">
+            </div>
+
+            <section class="contenedor comprar">
+                <h2 class="comprar__titulo">¿Porqué comprar con nosotros?</h2>
+
+                <div class="bloques">
+                    <div class="bloque">
+                        <img class="bloque__img" src="./build/img/icono_1.webp" alt="icono1">
+                        <h3 class="bloque__titulo">El mejor precio</h3>
+                        <p>orem ipsum, dolor sit amet consectetur adipisicing elit. Illo ut ducimus
+                            sequi blanditiis doloribus.</p>
+                    </div>
+                    <!--Bloque-->
+                    <div class="bloque">
+                        <img class="bloque__img" src="./build/img/icono_2.webp" alt="icono1">
+                        <h3 class="bloque__titulo">Para devs</h3>
+                        <p>orem ipsum, dolor sit amet consectetur adipisicing elit. Illo ut ducimus
+                            sequi blanditiis doloribus.</p>
+                    </div>
+                    <!--Bloque-->
+                    <div class="bloque">
+                        <img class="bloque__img" src="./build/img/icono_3.webp" alt="icono1">
+                        <h3 class="bloque__titulo">Envio gratis</h3>
+                        <p>orem ipsum, dolor sit amet consectetur adipisicing elit. Illo ut ducimus
+                            sequi blanditiis doloribus.</p>
+                    </div>
+                    <!--Bloque-->
+                    <div class="bloque">
+                        <img class="bloque__img" src="./build/img/icono_4.webp" alt="icono1">
+                        <h3 class="bloque__titulo">Mejor calidad</h3>
+                        <p>orem ipsum, dolor sit amet consectetur adipisicing elit. Illo ut ducimus
+                            sequi blanditiis doloribus.</p>
+                    </div>
+                    <!--Bloque-->
+                </div>
+                <!--Bloques-->
+            </section>
+        </div>
+
+        <!-- Seccion producto a comprar-->
+        <div id="paso-3" class="seccion">
+            <h1 class="nombre-compra"></h1>
+
+            <div class="camisa">
+                <img class="camisa__imagen" id="camisa__imagen" alt="camisa">
+
+                <div class="camisa__contenido">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam temporibus
+                        aut nostrum cupiditate velit molestias harum dolorem iste impedit laudantium
+                        similique facere placeat illo quos eveniet tenetur reiciendis, sunt facilis!</p>
+
+                    <form class="formulario">
+                        <select class="formulario__campo">
+                            <option disabled selected>-----Tamaño-----</option>
+                            <option>Chica</option>
+                            <option>Media</option>
+                            <option>Grande</option>
+                        </select>
+                        <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                        <button class="formulario__submit"><span>Agregar al carrito</span></button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__txt">Front End Store - ©Todos los derechos reservados 2021.</p>
+    </footer>
+
+    <script src="./build/js/app.min.js"></script>
+</body>
+
+</html>
